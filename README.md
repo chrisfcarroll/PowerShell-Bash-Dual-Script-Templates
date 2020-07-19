@@ -1,12 +1,9 @@
 PowerShell-Bash-Dual-Script-Templates
 =====================================
 
- 
-
 Three template files to hold both bash and PowerShell code in a single script
 file.
 
- 
 
 Why Would You Do That!?
 -----------------------
@@ -17,9 +14,8 @@ I have mostly used these templates for environment setup – files that will be
 dot-sourced – , so that I can have the nearly-same commandline environment
 across machines and across bash/zsh/PowerShell.
 
-• It is helpful that the same `. source` syntax works on both shells, so these
+It is helpful that the same `. source` syntax works on both shells, so these
 scripts can dot-source each other.
-
  
 
 Alternatives
@@ -33,24 +29,23 @@ machines.
     are for when ensuring a common shell on all your target machines is less
     simple than maintaining dual-language scripts.
 
--   To run powershell scripts on a nix/linux/macOs environment, put  `#!
-    /usr/bin/env pwsh` as the first line of each of your scripts, and \`chmod\`
+-   To run powershell scripts on a nix/linux/macOs environment, put  
+    `#! /usr/bin/env pwsh` as the first line of each of your scripts, and `chmod`
     them as executable.
 
 -   Some very limited scripts can work identically on both platforms without
     duplication. See `Onescriptforall.ps1` . Make this magic work by putting a
     shebang header for bash in the file, and giving it a .ps1 extension.
-
  
 
-### Miscellaneous Comments<br>
+### Miscellaneous Comments
 
 -   Using these scripts will still usually result in code duplication. The
     templates allow for some code to be run in either platform but how much of
     your code are you expecting to be compatible with both shells?
 
 -   Don't forget that to make anything executable in bash, you must chmod —e.g.
-    \`chmod a+x script.ps1\`—to set the executable flag.
+    `chmod a+x script.ps1`—to set the executable flag.
 
 -   PowerShell is 30 years newer than bash. It shows.
 
