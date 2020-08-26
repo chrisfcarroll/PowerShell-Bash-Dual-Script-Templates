@@ -59,5 +59,5 @@ machines.
     with the syntax button in the bottom right corner of the window.
 
 -   Testing your cross-platform scripts on Windows? Windows Subsystem for Linux
-    is ooooh very impressive. I used `` sudo ln -s ``which powershell.exe``
+    is ooooh very impressive. I used `` sudo ln -s ``\```which powershell.exe``\```
     /usr/bin/pwsh `` for testing powershell-from-bash-on-linux-on-windows.
