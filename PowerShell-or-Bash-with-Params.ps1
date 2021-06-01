@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 ` # \
 # PowerShell Param statement : every line must end in #\ except the last line must with <#\
 # And, you can't use backticks in this section        #\
