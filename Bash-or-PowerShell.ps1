@@ -9,7 +9,7 @@ echo @'
 # Bash Start -----------------------------------------------------------
 
 scriptdir="`dirname "${BASH_SOURCE[0]}"`";
-echo BASH. Script is running from $scriptdir
+echo BASH. Script $0
 
 # Above this line is Bash Script -------------------------------------------
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -19,12 +19,12 @@ echo > /dev/null <<"out-null" ###
 # Below this line is Powershell Script -------------------------------------
 
 $scriptdir=$PSScriptRoot
-"powershell. Script is running from $scriptdir"
+"powershell. Script $(Split-Path $PSCommandPath -Leaf)"
 
 # Powershell End -----------------------------------------------------------
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 out-null
 #---------------------------------------------------------------------------
 
-echo "Some simple lines work in both bash and powershell. 
-      Script directory $scriptdir was calculated differently in each shell."
+echo "Invoking executables and some simple lines work in both bash and powershell. 
+ Script directory $scriptdir was calculated differently in each shell."

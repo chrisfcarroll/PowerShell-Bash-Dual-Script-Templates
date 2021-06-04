@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 # The top half of this script runs in Bash and the bottom half in Powershell
 # Some lines at the end or the beginning can run in both shells, but syntax
 # common to both is limited.
