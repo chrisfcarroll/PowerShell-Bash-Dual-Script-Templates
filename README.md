@@ -4,25 +4,21 @@ PowerShell-Bash-Dual-Script-Templates
 Three template files to hold both bash and PowerShell code in a single script
 file. And for fish and PowerShell.
 
- 
 
 Why Would You Do That!?
 -----------------------
 
- 
 
 *Hey, you came to this repo, why are you asking me?*
 
-I have mostly used these templates for environment setup – files that will be
-dot-sourced – , so that I can have the nearly-same commandline environment
+I have mostly used these templates for environment setup — files that will be
+dot-sourced — so that I can have the nearly-same commandline environment
 across machines and across bash/zsh/PowerShell.
 
 It is helpful that the same `. source` syntax works in most shells, so these
 scripts can dot-source each other.
 
- 
 
- 
 
 Alternatives
 ------------
@@ -42,9 +38,8 @@ machines.
 
 -   Some very limited scripts can work identically on both platforms without
     duplication. See `Onescriptforall.ps1` . Make this magic work by putting a
-    shebang header for bash in the file, and giving it a .ps1 extension.  
+    shebang header for bash in the file, but giving it a .ps1 extension.
 
- 
 
 ### Miscellaneous Comments
 
